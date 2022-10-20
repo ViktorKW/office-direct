@@ -1,5 +1,6 @@
 @use "./text.scss";
 
+//---blue-btn start
 .blue-btn {
   display: flex;
   flex-direction: row;
@@ -45,3 +46,50 @@
   @extend .blue-btn;
   padding: 12px 22px 15px;
 }
+//---blue-btn end
+
+//---grey-btn start
+.grey-btn {
+  @extend .btn-text-big;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 20px 124px;
+
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  background: #f1f4f9;
+  border-radius: 8px;
+}
+
+.grey-btn:hover {
+  background: #e5e9f0;
+}
+
+.grey-btn:active {
+  background-color: #b0b3b8;
+  transition: 0.1s;
+}
+//---grey-btn end
+
+//---circle-btn start
+.circle-btn {
+  @extend .big-text-btn;
+  background: #ffffff;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+
+  border-radius: 50%;
+
+  border: 1px solid #d2ebff;
+  box-shadow: 0px 12px 20px -8px rgba(0, 116, 212, 0.35);
+  cursor: pointer;
+}
+
+.circle-btn:hover {
+  border: 1px solid #a5d3f9;
+}
+//---circle-btn finish
