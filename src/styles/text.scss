@@ -1,0 +1,85 @@
+@use "variables";
+
+* {
+  font-family: "Inter";
+  font-style: normal;
+  color: $txt-color;
+  line-height: 140%;
+}
+
+header {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 120%;
+  color: $header-txt-color;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 120%;
+  color: $header-txt-color;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+button {
+  font-weight: 700;
+}
+
+button .btn-text-big {
+  @extend button;
+  font-size: 19px;
+}
+
+button .btn-text-med {
+  @extend button;
+  font-size: 17px;
+}
+
+button .btn-text-small {
+  @extend button;
+  font-size: 15px;
+}
+
+p {
+  font-weight: 400;
+}
+
+.p-text-big {
+  @extend p;
+  font-size: 19px;
+}
+
+.p-text-med {
+  @extend p;
+  font-size: 17px;
+}
+
+.p-text-small {
+  @extend p;
+  font-size: 15px;
+}
+
+caption {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 12px;
+}
