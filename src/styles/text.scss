@@ -1,9 +1,7 @@
-@use "variables";
-
 * {
   font-family: "Inter";
   font-style: normal;
-  color: $txt-color;
+  color:#282a2b;
   line-height: 140%;
 }
 
@@ -11,14 +9,14 @@ header {
   font-weight: 900;
   font-size: 54px;
   line-height: 120%;
-  color: $header-txt-color;
+  color:#2b3350;
 }
 
 h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 120%;
-  color: $header-txt-color;
+  color:#2b3350;
 }
 
 h2 {
@@ -40,17 +38,17 @@ button {
   font-weight: 700;
 }
 
-button .btn-text-big {
+.btn-text-big {
   @extend button;
   font-size: 19px;
 }
 
-button .btn-text-med {
+.btn-text-med {
   @extend button;
   font-size: 17px;
 }
 
-button .btn-text-small {
+.btn-text-small {
   @extend button;
   font-size: 15px;
 }
