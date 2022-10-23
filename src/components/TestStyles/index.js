@@ -1,6 +1,6 @@
-
+import './style.scss';
 const TestStyles = () => {
-    return `<div style="background:#ffff; padding:10px;">
+    return `<div class="test-styles" style="background:#ffff; padding:10px;">
         <h1>Styles showcase!</h1>
         <hr/>
         <h2 class="alert">Buttons</h2>
