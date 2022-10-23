@@ -3,14 +3,18 @@ const TestStyles = () => {
     return `<div style="background:#ffff; padding:10px;">
         <h1>Styles showcase!</h1>
         <hr/>
-        <h2>Buttons</h2>
+        <h2 class="alert">Buttons</h2>
         <button class="blue-btn-big">class = "blue-btn-med"</button>
+        <br/>
         <br/>
         <button class="blue-btn-med">class = "blue-btn-med"</button>
         <br/>
+        <br/>
         <button class="blue-btn-small">class = "blue-btn-small"</button>
         <br/>
+        <br/>
         <button class="grey-btn">class = "grey-btn"</button>
+        <br/>
         <br/>
         <lable>class = "circle-btn"</lable>
         <div style="display:flex">
@@ -20,7 +24,7 @@ const TestStyles = () => {
             <button class="circle-btn">></button>
         </div>
         <hr/>
-        <h2>Text text</h2>
+        <h2 class="alert">Text</h2>
         SimpleText
         <header>header text</header>
         <h1>h1 text</h1>
@@ -41,6 +45,14 @@ const TestStyles = () => {
         <caption>caption</caption>
         <br/>
         <lable>label</lable>
+        <hr/>
+        <h2 class="alert">Input type="text" (beta)</h2>
+        <br/>
+        <div class="group">
+            <input type="text" required="required"/>
+            <label class = "placeholder">Name</label>
+        </div>
+
     </div>`;
 };
 
