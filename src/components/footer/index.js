@@ -18,7 +18,7 @@ const Footer = () => {
             <li class='link mb-0 m-large'><a href='#'  >Контакты</a></li>
             <li class='info number'><img src='${cellPhone}'><a href='#' >+7 (812) 600-31-24</a></li>
             <li class='info'><img src='${mailBox}'><a href='#' >zakaz@kreslasamurai.ru</a></li>
-            <li class='info'><img src='${jps}'><a href='#' >ул. Красного курсанта д.25, лит.в, оф. 114, бизнес-центр "RED CADET"</a></li>
+            <li class='info long'><img src='${jps}'><a href='#' >ул. Красного курсанта д.25, лит.в, оф. 114, бизнес-центр "RED CADET"</a></li>
             <li style='margin-bottom:6px' class='privacyPolicy'><a href='#' >Политика конфиденциальности</a></li>
             <li class='privacyPolicy'><a href='#' >© 2021 Все права защищены</a></li>
         </ul>

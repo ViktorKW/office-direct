@@ -2,13 +2,17 @@ footer {
     background: #191E32;
     padding: 16px;
 
+    margin: auto;
+
     .officeDirect {
         order: -2;
         display: flex;
         align-items: flex-start;
-        img{
+
+        img {
             margin-left: -1px;
         }
+
         div {
             display: flex;
             align-items: flex-start;
@@ -29,18 +33,16 @@ footer {
         }
 
     }
-    .rtx{
-        p{
-            display: inline-block
-        }
-    }
+
     ul {
-        @media (min-width:767px) {
-            height: 126px;
-        }
-        // justify-content: space-between;
         max-width: 1172px;
         width: 100%;
+        @media (min-width:768px) {
+            height: 126px;
+        }
+
+        // justify-content: space-between;
+
         margin: auto;
         display: flex;
         // flex: 0 1 auto;
@@ -49,11 +51,12 @@ footer {
 
         li {
             margin-bottom: 10px;
+
             .m-large {
                 margin-bottom: 20px;
             }
 
-            @media (min-width:767px) {
+            @media (min-width:768px) {
                 &.mb-0 {
                     margin-bottom: 0;
                 }
@@ -79,10 +82,22 @@ footer {
                 line-height: 140%;
             }
 
+            &.long {
+                @media (min-width:768px) {
+                    max-width: 351px;
+                }
+
+                @media (min-width:872px) {
+                    max-width: 100%;
+                }
+
+            }
+
             img {
                 margin-right: 11px;
                 display: none;
-                @media (min-width:767px) {
+
+                @media (min-width:768px) {
                     display: block;
                 }
             }
@@ -98,7 +113,7 @@ footer {
         }
 
         .privacyPolicy {
-            @media (min-width:767px) {
+            @media (min-width:768px) {
                 order: -1;
             }
 
