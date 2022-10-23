@@ -1,6 +1,7 @@
 import './style.scss';
 import Header from '../../components/Header';
 import testImg from '../../assets/test-1.jpg';
+import Footer from '../../components/footer';
 import TestStyles from '../../components/TestStyles'
 const Home = () => {
   return `
@@ -10,6 +11,7 @@ const Home = () => {
       <img src="${testImg}" alt="/">
     </div>
     ${TestStyles()}
+    ${Footer()}
   `;
 };
 
