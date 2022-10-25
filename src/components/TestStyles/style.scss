@@ -1,224 +1,222 @@
-.test-styles{
-    //----text-start----
-    * {
-        font-family: "Inter";
-        font-style: normal;
-        color:#282a2b;
-        line-height: 140%;
-      }
-      
-      header {
-        font-weight: 900;
-        font-size: 54px;
-        line-height: 120%;
-        color:#2b3350;
-      }
-      
-      h1 {
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 120%;
-        color:#2b3350;
-      }
-      
-      h2 {
-        font-weight: 700;
-        font-size: 26px;
-      }
-      
-      h3 {
-        font-weight: 700;
-        font-size: 22px;
-      }
-      
-      h4 {
-        font-weight: 700;
-        font-size: 17px;
-      }
-      
-      button {
-        font-weight: 700;
-      }
-      
-      .btn-text-big {
-        @extend button;
-        font-size: 19px;
-      }
-      
-      .btn-text-med {
-        @extend button;
-        font-size: 17px;
-      }
-      
-      .btn-text-small {
-        @extend button;
-        font-size: 15px;
-      }
-      
-      p {
-        font-weight: 400;
-      }
-      
-      .p-text-big {
-        @extend p;
-        font-size: 19px;
-      }
-      
-      .p-text-med {
-        @extend p;
-        font-size: 17px;
-      }
-      
-      .p-text-small {
-        @extend p;
-        font-size: 15px;
-      }
-      
-      caption {
-        font-weight: 400;
-        font-size: 13px;
-      }
-      
-      label {
-        font-weight: 700;
-        font-size: 12px;
-      }
-      
-    //----text-end----
-    
-    //----button-start----
-        //---blue-btn start
-        .blue-btn {
-        text-align: center;
+@mixin text {
+  * {
+    font-family: "Inter";
+    font-style: normal;
+    color: #282a2b;
+    line-height: 140%;
+  }
 
-        background: #0074d4;
-        box-shadow: 0px 12.9632px 15.375px rgba(0, 116, 212, 0.241),
-            0px 5.38427px 6.38599px rgba(0, 116, 212, 0.15),
-            0px 1.94738px 2.30969px rgba(0, 116, 212, 0.059);
-        border-radius: 8px;
-        color: #ffffff;
-        padding: 26px 38px 29px;
+  header {
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 120%;
+    color: #2b3350;
+  }
 
-        transition: 0.3s;
-        border: none;
-        cursor: pointer;
-        }
+  h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 120%;
+    color: #2b3350;
+  }
 
-        .blue-btn:hover {
-        background-color: #009cff;
-        }
+  h2 {
+    font-weight: 700;
+    font-size: 26px;
+  }
 
-        .blue-btn:active {
-        background-color: #006cff;
-        transition: 0.1s;
-        }
+  h3 {
+    font-weight: 700;
+    font-size: 22px;
+  }
 
-        .blue-btn-big {
-        @extend .btn-text-big;
-        @extend .blue-btn;
-        padding: 26px 38px 29px;
-        }
+  h4 {
+    font-weight: 700;
+    font-size: 17px;
+  }
 
-        .blue-btn-med {
-        @extend .btn-text-med;
-        @extend .blue-btn;
-        padding: 26px 38px 30px;
-        }
+  button {
+    font-weight: 700;
+  }
 
-        .blue-btn-small {
-        @extend .btn-text-small;
-        @extend .blue-btn;
-        padding: 12px 22px 15px;
-        }
-        //---blue-btn end
+  .btn-text-big {
+    @extend button;
+    font-size: 19px;
+  }
 
-        //---grey-btn start
-        .grey-btn {
-        @extend .btn-text-big;
-        width: 100%;
-        text-align: center;
+  .btn-text-med {
+    @extend button;
+    font-size: 17px;
+  }
 
-        padding: 20px 124px;
+  .btn-text-small {
+    @extend button;
+    font-size: 15px;
+  }
 
-        transition: 0.3s;
-        border: none;
-        cursor: pointer;
-        background: #f1f4f9;
-        border-radius: 8px;
-        }
+  p {
+    font-weight: 400;
+  }
 
-        .grey-btn:hover {
-        background: #e5e9f0;
-        }
+  .p-text-big {
+    @extend p;
+    font-size: 19px;
+  }
 
-        .grey-btn:active {
-        background-color: #b0b3b8;
-        transition: 0.1s;
-        }
-        //---grey-btn end
+  .p-text-med {
+    @extend p;
+    font-size: 17px;
+  }
 
-        //---circle-btn start
-        .circle-btn {
-        @extend .btn-text-big;
-        background: #ffffff;
-        height: 50px;
-        width: 50px;
-        top: 50%;
+  .p-text-small {
+    @extend p;
+    font-size: 15px;
+  }
 
-        border-radius: 50%;
+  caption {
+    font-weight: 400;
+    font-size: 13px;
+  }
 
-        border: 1px solid #d2ebff;
-        box-shadow: 0px 12px 20px -8px rgba(0, 116, 212, 0.35);
-        cursor: pointer;
-        }
+  label {
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
 
-        .circle-btn:hover {
-        border: 1px solid #a5d3f9;
-        }
-        //---circle-btn finish
+@mixin buttons {
+  //---blue-btn start
+  .blue-btn {
+    text-align: center;
 
-    //----button-end----
+    background: #0074d4;
+    box-shadow: 0px 12.9632px 15.375px rgba(0, 116, 212, 0.241),
+      0px 5.38427px 6.38599px rgba(0, 116, 212, 0.15),
+      0px 1.94738px 2.30969px rgba(0, 116, 212, 0.059);
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 26px 38px 29px;
 
-    //----input-start----
-        $trans-time: 300ms;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+  }
 
+  .blue-btn:hover {
+    background-color: #009cff;
+  }
 
-        .group {
-        position: relative;
-        }
-        
-        input {
-            background: #F7F9FC;
-            border: 1px solid #E4E9F2;
-            padding: 20px;
-            display: block;
-            width: 100%;
-            border-radius: 8px;
-        
-            &:focus {
-                outline: none;
-                border: 2px solid #2F80ED;
-                box-shadow: 0px 5px 10px rgba(47, 128, 237, 0.15);
-            }
-            &:focus ~ label,
-            &:valid ~ label {
-                top: -20px;
-                color: #2F80ED;
-            }
-        
-        }
-        
-        
-        .placeholder{
-        font-size: 16px;
-        color: #8B98B1;
-        font-weight: normal;
-        position: absolute;
-        pointer-events: none;
-        left: 20px;
-        top: 20px;
-        transition: $trans-time ease all;
-        }
-    
-    //----input-end!----
+  .blue-btn:active {
+    background-color: #006cff;
+    transition: 0.1s;
+  }
+
+  .blue-btn-big {
+    @extend .btn-text-big;
+    @extend .blue-btn;
+    padding: 26px 38px 29px;
+  }
+
+  .blue-btn-med {
+    @extend .btn-text-med;
+    @extend .blue-btn;
+    padding: 26px 38px 30px;
+  }
+
+  .blue-btn-small {
+    @extend .btn-text-small;
+    @extend .blue-btn;
+    padding: 12px 22px 15px;
+  }
+  //---blue-btn end
+
+  //---grey-btn start
+  .grey-btn {
+    @extend .btn-text-big;
+    width: 100%;
+    text-align: center;
+
+    padding: 20px 124px;
+
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    background: #f1f4f9;
+    border-radius: 8px;
+  }
+
+  .grey-btn:hover {
+    background: #e5e9f0;
+  }
+
+  .grey-btn:active {
+    background-color: #b0b3b8;
+    transition: 0.1s;
+  }
+  //---grey-btn end
+
+  //---circle-btn start
+  .circle-btn {
+    @extend .btn-text-big;
+    background: #ffffff;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+
+    border-radius: 50%;
+
+    border: 1px solid #d2ebff;
+    box-shadow: 0px 12px 20px -8px rgba(0, 116, 212, 0.35);
+    cursor: pointer;
+  }
+
+  .circle-btn:hover {
+    border: 1px solid #a5d3f9;
+  }
+  //---circle-btn finish
+}
+
+@mixin inputs {
+  $trans-time: 300ms;
+
+  .group {
+    position: relative;
+  }
+
+  input {
+    background: #f7f9fc;
+    border: 1px solid #e4e9f2;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+
+    &:focus {
+      outline: none;
+      border: 2px solid #2f80ed;
+      box-shadow: 0px 5px 10px rgba(47, 128, 237, 0.15);
+    }
+    &:focus ~ label,
+    &:valid ~ label {
+      top: -20px;
+      color: #2f80ed;
+    }
+  }
+
+  .placeholder {
+    font-size: 16px;
+    color: #8b98b1;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 20px;
+    transition: $trans-time ease all;
+  }
+}
+
+.test-styles {
+  @include text();
+  @include buttons();
+  @include inputs();
 }
