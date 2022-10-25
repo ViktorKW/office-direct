@@ -28,4 +28,22 @@
 
     color: #2b3350;
   }
+
+  $link-color: #959aae;
+  a {
+    color: $link-color;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
+    }
+    &:visited {
+      color: $link-color;
+    }
+  }
 }
