@@ -13,7 +13,7 @@ const Advantages = () => {
       </div>
       <div class = "feature">
         <img src=${chess} alt = "not found">
-        <p><strong>Individual discounts</strong> when ordering from 3 pr.</p>
+        <p><strong>Individual discounts</strong> when ordering from 3 products</p>
         <a href="#">Check conditions</a>
       </div>
       <div class = "feature">

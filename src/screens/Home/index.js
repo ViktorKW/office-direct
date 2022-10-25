@@ -4,6 +4,7 @@ import testImg from "../../assets/test-1.jpg";
 import Footer from "../../components/footer";
 import TestStyles from "../../components/TestStyles";
 import Advantages from "../../components/Advantages";
+import Catalog from "../../components/Catalog";
 const Home = () => {
   return `
     ${Header()}
@@ -12,6 +13,7 @@ const Home = () => {
       <img src="${testImg}" alt="/">
     </div>
     ${Advantages()}
+    ${Catalog()}
     ${TestStyles()}
     ${Footer()}
   `;
