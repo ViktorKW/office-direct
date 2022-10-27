@@ -7,6 +7,7 @@ import Advantages from "../../components/Advantages";
 import Catalog from "../../components/Catalog";
 import Introduction from "../../components/Introduction";
 import SamuraiLady from "../../components/SamuraiLady";
+import Description from "../../components/Description";
 
 const Home = () => {
   return `
@@ -18,6 +19,7 @@ const Home = () => {
     ${Introduction()}
     ${Advantages()}
     ${Catalog()}
+    ${Description()}
     ${SamuraiLady()}
     ${Footer()}
     ${TestStyles()}
