@@ -6,6 +6,8 @@ import TestStyles from "../../components/TestStyles";
 import Advantages from "../../components/Advantages";
 import Catalog from "../../components/Catalog";
 import Introduction from "../../components/Introduction";
+import SamuraiLady from "../../components/SamuraiLady";
+
 const Home = () => {
   return `
     ${Header()}
@@ -16,8 +18,9 @@ const Home = () => {
     ${Introduction()}
     ${Advantages()}
     ${Catalog()}
-    ${TestStyles()}
+    ${SamuraiLady()}
     ${Footer()}
+    ${TestStyles()}
   `;
 };
 
