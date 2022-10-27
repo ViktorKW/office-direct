@@ -4,6 +4,7 @@ import Catalog from "../../components/Catalog";
 import Introduction from "../../components/Introduction";
 import SamuraiLady from "../../components/SamuraiLady";
 import Description from "../../components/Description";
+import Clients from "../../components/Clients";
 
 const Home = () => {
   return `
@@ -12,6 +13,7 @@ const Home = () => {
       ${Catalog()}
       ${Description()}
       ${SamuraiLady()}
+      ${Clients()}
       ${Footer()}
     </div>
   `;

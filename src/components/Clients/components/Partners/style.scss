@@ -1,0 +1,25 @@
+partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 120%;
+
+    color: #2b3350;
+  }
+
+  logos {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      margin: 40px;
+      width: 96px;
+    }
+  }
+}
