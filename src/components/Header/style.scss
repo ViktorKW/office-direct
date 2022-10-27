@@ -46,6 +46,10 @@
     .phone {
       font-size: 18px;
       font-weight: 500;
+
+      img {
+        transform: rotate(45deg);
+      }
     }
 
     .logo {
@@ -111,8 +115,8 @@
         display: flex;
         align-items: center;
 
-        span {
-          font-size: 16px;
+        img {
+          height: 16px;
         }
       }
 
@@ -125,8 +129,8 @@
         font-weight: 500;
         font-size: 14px;
 
-        .icon {
-          font-size: 18px;
+        img {
+          height: 18px;
         }
 
         .quantity {
