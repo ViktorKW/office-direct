@@ -1,5 +1,11 @@
-@use 'global';
+@use "global";
 
-.alert{
-    color:red;
+#root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.alert {
+  color: red;
 }
