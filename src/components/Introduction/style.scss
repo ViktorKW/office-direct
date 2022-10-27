@@ -2,8 +2,8 @@
   max-width: 1920px;
   display: flex;
   flex-direction: row;
-  padding-left: 10%;
-  padding-right: 10%;
+  justify-content: center;
+
   background-image: url("./images/background.svg");
 
   .info {
