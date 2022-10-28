@@ -1,8 +1,9 @@
 .header {
-  max-width: 1172px;
+  // max-width: 1172px;
   margin-inline: auto;
   color: #2b3350;
-
+  align-self: center;
+  padding: 20px;
   &__nav {
     position: relative;
     display: flex;
@@ -16,7 +17,7 @@
   }
 
   &__main {
-    width: 100%;
+    // width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
