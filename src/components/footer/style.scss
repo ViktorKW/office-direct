@@ -2,10 +2,13 @@ footer {
   background: #191e32;
   padding: 16px;
 
+  margin: auto;
+
   .officeDirect {
     order: -2;
     display: flex;
     align-items: flex-start;
+
     img {
       margin-left: -1px;
     }
@@ -66,10 +69,6 @@ footer {
       font-size: 15px;
       line-height: 140%;
       color: #e7eaef;
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
 
     .info {
