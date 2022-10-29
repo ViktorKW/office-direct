@@ -1,6 +1,6 @@
 START PROJECT:
 1) npm i
-2) npm install -g win-node-env
+2) (Required for Windows systems) npm install -g win-node-env
 3) npm run start --watch
 
 О задании:
