@@ -1,4 +1,5 @@
 @use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -15,8 +16,11 @@ html {
 
 body {
   padding: 1.5rem;
-  font-size: 20px;
-  background: variables.$bg;
+  background: #f1f1f1;
+  font-family: 'Inter';
+  font-style: normal;
+  color: #282a2b;
+  line-height: 140%;
 }
 
 img {
@@ -27,6 +31,7 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+  font-family: inherit;
 }
 
 a,
@@ -56,6 +61,7 @@ input {
   border: none;
   outline: none;
   color: inherit;
+  background: transparent;
 }
 
 .hero {
