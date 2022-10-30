@@ -1,0 +1,309 @@
+.basket {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 850px;
+    width: 100%;
+    margin: auto;
+
+    .checkout {
+        flex-direction: column;
+        margin-bottom: 44px;
+
+        @media (min-width:768px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 16px;
+            margin-bottom: 102px;
+        }
+
+        .basketCheckout {
+            padding: 26px 55px 29px;
+            background: #0074D4;
+            box-shadow: 0px 12.9632px 15.375px rgba(0, 116, 212, 0.241), 0px 5.38427px 6.38599px rgba(0, 116, 212, 0.15), 0px 1.94738px 2.30969px rgba(0, 116, 212, 0.059);
+            border-radius: 8px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+
+            @media (min-width:768px) {
+                margin-right: 22px;
+                margin-bottom: 0;
+            }
+
+            margin-bottom: 16px;
+        }
+
+        .checkoutPolicy {
+            margin: auto;
+            max-width: 483px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: #959AAE;
+            text-align: center;
+
+            @media (min-width:768px) {
+                text-align: left;
+                margin: 0;
+            }
+        }
+    }
+
+
+    .cartImg {
+        margin-right: 12px;
+    }
+
+    .arrowRight {
+        margin: 36px 10px
+    }
+
+    .basketRoute {
+        display: none;
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 150%;
+            &:first-child {color: #576077;}
+            &:last-child {color: #959AAE;}
+        }
+
+        @media (min-width:768px) {
+            display: flex;
+        }
+    }
+
+    .total {
+        @media (min-width:768px) {
+            justify-content: flex-end;
+        }
+
+        margin-bottom: 48px;
+    }
+}
+
+.orderedItem {
+    flex-direction: column;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px #E7EAEF solid;
+
+    @media (min-width:768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    img {
+        border-radius: 8px;
+        margin-right: 12px;
+
+        @media (min-width:768px) {
+            margin-right: 19px;
+        }
+    }
+
+    .itemInfo {
+        max-width: 334px;
+    }
+
+    .heading {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #2B3350;
+        margin-bottom: 3px;
+    }
+
+    .desc {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 130%;
+        color: #959AAE;
+    }
+}
+
+.oldPrice {
+    background-image: url("../../assets/icons/priceOverline.svg");
+    background-repeat: no-repeat;
+    background-position-y: 8px;
+}
+
+@mixin priceTag {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.05em;
+    color: #2B3350;
+}
+
+.generalPrice {
+    @include priceTag;
+}
+
+.pricePanel {
+    .forMobile {
+        display: block;
+
+        @media (min-width:768px) {
+            display: none;
+        }
+    }
+
+    .forDekstop {
+        display: none;
+
+        @media (min-width:768px) {
+            display: block;
+        }
+    }
+
+    .currentPrice,
+    .oldPrice {
+        @media (min-width:992px) {
+            margin-right: 46px;
+        }
+
+        @media (min-width:768px) {
+            margin-right: 20px;
+        }
+
+        @include priceTag;
+        display: flex;
+        align-items: flex-end;
+    }
+
+
+
+    .addItem,
+    .deductItem,
+    .deleteItem {
+        width: 34px;
+        height: 34px;
+        border-radius: 18px;
+        border: 1px solid #E7EAEF;
+    }
+
+    .addItem {
+        background-image: url("../../assets/icons/plus.svg");
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: 7px;
+        margin-right: 14px;
+
+        @media (min-width:768px) {
+            margin-right: 25px;
+        }
+
+        @media (min-width:992px) {
+            margin-right: 41px;
+        }
+
+        &:disabled {
+            background-image: url("../../assets/icons/plusBlocked.svg");
+
+        }
+    }
+
+    .deductItem {
+        background-image: url("../../assets/icons/minus.svg");
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: 9px;
+        margin-right: 9px;
+
+        &:disabled {
+            background-image: url("../../assets/icons/minusBlocked.svg");
+        }
+    }
+
+    .quantity {
+        margin-right: 11px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #191E32;
+    }
+
+    .deleteItem {
+        order: 3;
+        background-image: url("../../assets/icons/trashCan.svg");
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: 6px;
+
+        &:disabled {
+            background-image: url("../../assets/icons/trashCanDisabled.svg");
+        }
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #2B3350;
+    margin-bottom: 16px;
+
+    @media (min-width:768px) {
+        margin-bottom: 29px;
+    }
+}
+
+.imgAndDesc {}
