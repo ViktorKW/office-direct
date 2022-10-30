@@ -2,11 +2,11 @@ import Home from '../screens/Home';
 import About from '../screens/About';
 import Contact from '../screens/Contact';
 import ErrorPage from '../screens/ErrorPage';
-import BasketPreview from '../components/basketPreview';
+import Basket from '../screens/Basket';
 
 export const routes = {
   '/': Home,
-  '/cart': BasketPreview,
+  '/cart': Basket,
   '/about': About,
   '/contact': Contact,
   404: ErrorPage,
