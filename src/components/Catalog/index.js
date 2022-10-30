@@ -1,7 +1,7 @@
 import "./style.scss";
 import Selectors from "./components/Selectors";
 import Products from "./components/Products";
-import Advantages from "./components/Advantages";
+import Advantages from "../Advantages";
 const Catalog = () => {
   return `
     <div class = "catalog">
