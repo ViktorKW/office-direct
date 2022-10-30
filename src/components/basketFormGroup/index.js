@@ -3,7 +3,7 @@ import BasketRadioInput from "../BasketRadioInput";
 import "./style.scss";
 const BasketFormGroup = ({subforms}) => {
   return `
-    <div class='busketFormGroup'>
+    <div class='basketFormGroup'>
     ${subforms.map(({head,sub,array,details})=>{
         return `
         ${head?`<h4>${head}</h4>`:``}

@@ -1,15 +1,15 @@
 import "./style.scss";
 import Header from "../../components/Header";
 import Footer from "../../components/footer";
-import BusketPreview from "../../components/busketPreview";
+import BasketPreview from "../../components/basketPreview";
 // ${Header()}
-const Busket = () => {
+const Basket = () => {
   return `
-    <div class = "busketContainer">
-      ${BusketPreview()}
+    <div class = "basketContainer">
+      ${BasketPreview()}
       ${Footer()}
     </div>
   `;
 };
 
-export default Busket;
+export default Basket;

@@ -1,5 +1,11 @@
-import "./style.scss";
-const BasketItem = ({img,header,desc,initPrice,currentPrice,quantity}) => {
+const BasketItem = ({
+  img,
+  header,
+  desc,
+  initPrice,
+  currentPrice,
+  quantity,
+}) => {
   return `  <div class='orderedItem d-flex'>
             <div class='imgAndDesc d-flex justify-content-between align-items-center'>
                 <img src='${img}'>
