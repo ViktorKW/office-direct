@@ -4,8 +4,7 @@ import products_db from "../../../../assets/products.json";
 
 const Products = () => {
   function drawProducts(db) {
-    console.log(db);
-    const result = db.map((element) => Product(element));
+    const result = db.slice(0, 8).map((element) => Product(element));
     console.log(result.join(","));
     return result.join(" ");
   }
