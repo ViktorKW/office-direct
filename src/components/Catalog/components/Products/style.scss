@@ -1,20 +1,15 @@
 .content {
-  max-width: 1420px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
   color: #2b3350;
+  max-width: 1360px;
 
   .products {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     margin: 10px;
-  }
 
-  .products > div {
-    margin: 20px;
+    & > div {
+      margin: 20px;
+    }
   }
 
   .grey-btn {
