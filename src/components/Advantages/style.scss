@@ -1,8 +1,10 @@
 .advantages {
   background-color: #ffffff;
+  width: 100%;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: 40px;
 
   .feature {

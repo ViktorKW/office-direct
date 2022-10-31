@@ -1,5 +1,5 @@
-@use 'variables';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@use "variables";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 html {
   box-sizing: border-box;
@@ -17,7 +17,7 @@ html {
 body {
   padding: 1.5rem;
   background: #f1f1f1;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   color: #282a2b;
   line-height: 140%;

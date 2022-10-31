@@ -9,3 +9,28 @@
 .alert {
   color: red;
 }
+
+.grey-btn {
+  font-weight: 700;
+  font-size: 19px;
+
+  width: 100%;
+  text-align: center;
+
+  padding: 20px 124px;
+
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  background: #f1f4f9;
+  border-radius: 8px;
+}
+
+.grey-btn:hover {
+  background: #e5e9f0;
+}
+
+.grey-btn:active {
+  background-color: #b0b3b8;
+  transition: 0.1s;
+}
