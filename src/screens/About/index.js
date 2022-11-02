@@ -1,10 +1,10 @@
-import "./style.scss";
-import Header from "../../components/Header";
+import './style.scss';
+import Header from '../../components/Header';
 
 const About = () => {
   return `
-      ${Header()}
-      <div class="hero about">
+      <div class="page about">
+        ${Header()}
         <h1>About</h1>
       </div>
    `;

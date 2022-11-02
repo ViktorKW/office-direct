@@ -1,6 +1,6 @@
-import "./style.scss";
-import face from "./images/face.svg";
-import star from "./images/star.svg";
+import './style.scss';
+import face from './images/face.svg';
+import star from './images/star.svg';
 
 const Comments = () => {
   return `

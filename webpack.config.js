@@ -78,7 +78,8 @@ module.exports = (env) => {
 
     devtool: production ? 'source-map' : 'eval-cheap-module-source-map',
     devServer: {
-      // static: './dist',
+      historyApiFallback: true,
+      static: './dist',
       hot: true,
       port: 3001,
     },

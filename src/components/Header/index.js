@@ -5,45 +5,47 @@ import cart from '../../assets/icons/cart.svg';
 
 const Header = () => {
   return `
-    <header class="header">
-      <div class="header__main">
-        <div class="logo"><span class="logo__beggining">Office</span><span class="logo__end">Direct</span></div>
-        <input type="text" placeholder="Search..." class="input">
-        <div class="phone"><img src='${cellPhone}' alt="cellphone-icon" />+38(095)555-55-55</div>
-        <button type="button" class="button">Request a call</button>
-      </div>
-      <div class="header__menu">
-        <div class="header__menu-main">
-          <div class="button">
-            <span class="material-symbols-outlined">
-              sort
-            </span>
-            <button type="button" class="button__catalogue">Catalogue</button>
-          </div>
-          <nav class="header__nav">
-            <a href="#">About the products</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Delivery & payment</a>
-            <a href="#">Contacts</a>
-          </nav>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__main">
+          <div class="logo"><a href="/" data-link><span class="logo__beggining">Office</span><span class="logo__end">Direct</span></a></div>
+          <input type="text" placeholder="Search..." class="input">
+          <div class="phone"><img src='${cellPhone}' alt="cellphone-icon" />+38(095)555-55-55</div>
+          <button type="button" class="button">Request a call</button>
         </div>
-        <div class="header__menu-additional">
-          <div class="location">
-            <img src='${send}' alt="send icon" />
-            <select name="city" id="city">
-              <option value="kyiv" selected>Kyiv</option>
-              <option value="london">London</option>
-              <option value="berlin">Berlin</option>
-            </select>
+        <div class="header__menu">
+          <div class="header__menu-main">
+            <div class="button">
+              <span class="material-symbols-outlined">
+                sort
+              </span>
+              <button type="button" class="button__catalogue">Catalogue</button>
+            </div>
+            <nav class="header__nav">
+              <a href="about" data-link>About the products</a>
+              <a href="testimonials" data-link>Testimonials</a>
+              <a href="/" data-link>Delivery & payment</a>
+              <a href="/" data-link>Contacts</a>
+            </nav>
           </div>
-          <div class="cart">
-            <img src='${cart}' alt="cart icon" />
-            <p>My orders</p>
-            <span class="quantity">+1</span>
+          <div class="header__menu-additional">
+            <div class="location">
+              <img src='${send}' alt="send icon" />
+              <select name="city" id="city">
+                <option value="kyiv" selected>Kyiv</option>
+                <option value="london">London</option>
+                <option value="berlin">Berlin</option>
+              </select>
+            </div>
+            <div class="cart">
+              <img src='${cart}' alt="cart icon" />
+              <p>My orders</p>
+              <span class="quantity">+1</span>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
   `;
 };
 
