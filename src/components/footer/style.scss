@@ -1,8 +1,10 @@
 footer {
   background: #191e32;
-  padding: 16px;
 
-  margin: auto;
+  padding: 30px;
+  // padding: 16px;
+  // margin: auto;
+
   .hideOnMobile {
     display: none;
     @media (min-width: 768px) {
