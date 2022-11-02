@@ -6,7 +6,7 @@ import CatalogPage from "../screens/CatalogPage";
 import ProductPage from "../screens/ProductPage";
 
 export const routes = {
-  "/": ProductPage,
+  "/": Home,
   "/about": About,
   "/contact": Contact,
   "/catalog": CatalogPage,
