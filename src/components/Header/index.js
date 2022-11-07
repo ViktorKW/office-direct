@@ -1,13 +1,13 @@
-import './style.scss';
-import cellPhone from '../../assets/icons/cellPhone.svg';
-import send from '../../assets/icons/send.svg';
-import cart from '../../assets/icons/cart.svg';
+import "./style.scss";
+import cellPhone from "../../assets/icons/cellPhone.svg";
+import send from "../../assets/icons/send.svg";
+import cart from "../../assets/icons/cart.svg";
 
 const Header = () => {
   return `
     <header class="header">
       <div class="header__main">
-        <div class="logo"><span class="logo__beggining">Office</span><span class="logo__end">Direct</span></div>
+        <a href ="/" data-link class="logo"><span class="logo__beggining">Office</span><span class="logo__end">Direct</span></a>
         <input type="text" placeholder="Search..." class="input">
         <div class="phone"><img src='${cellPhone}' alt="cellphone-icon" />+38(095)555-55-55</div>
         <button type="button" class="button">Request a call</button>
@@ -15,10 +15,10 @@ const Header = () => {
       <div class="header__menu">
         <div class="header__menu-main">
           <div class="button">
-            <span class="material-symbols-outlined">
+            <span data-link class="material-symbols-outlined">
               sort
             </span>
-            <button type="button" class="button__catalogue">Catalogue</button>
+            <a href="catalog" data-link type="button" class="button__catalogue">Catalogue</a>
           </div>
           <nav class="header__nav">
             <a href="#">About the products</a>

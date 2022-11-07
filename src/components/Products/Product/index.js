@@ -9,7 +9,7 @@ const Product = ({ name, current_price, full_price, picture }) => {
       <price>${current_price} UAH</price>
       <fullprice>${full_price} UAH</fullprice>
     </div>
-    <button class = "blue-btn">Add to cart</button>
+    <a type = "button" data-link href = "/product" class = "blue-btn">Add to cart</a>
   </div>`;
 };
 
