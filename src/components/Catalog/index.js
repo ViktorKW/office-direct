@@ -9,7 +9,7 @@ const Catalog = () => {
       <h1>Chair's catalog</h1>
       ${Selectors()}
       ${Products()}
-      <button class = "grey-btn" onclick = "onClickCatalog()">Show more</button>
+      <a type = "button" href = "/catalog" data-link class = "grey-btn">Show more</a>
     </div>
   `;
 };
