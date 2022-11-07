@@ -1,7 +1,7 @@
 import "./style.scss";
-import Selectors from "./components/Selectors";
-import Products from "./components/Products";
-import Advantages from "./components/Advantages";
+import Selectors from "../Selectors";
+import Products from "../Products";
+import Advantages from "../Advantages";
 const Catalog = () => {
   return `
     <div class = "catalog">
@@ -9,6 +9,7 @@ const Catalog = () => {
       <h1>Chair's catalog</h1>
       ${Selectors()}
       ${Products()}
+      <button class = "grey-btn" onclick = "onClickCatalog()">Show more</button>
     </div>
   `;
 };

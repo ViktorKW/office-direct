@@ -1,0 +1,56 @@
+.catalog-page {
+  background-color: #ffffffff;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  min-width: 1920px;
+
+  .content {
+    max-width: 1360px;
+    align-self: center;
+
+    font-family: "Inter";
+    font-style: normal;
+
+    .nav-history {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 150%;
+
+      .previous {
+        color: #576077;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .current {
+        color: #959aae;
+      }
+    }
+
+    .page-info {
+      color: #2b3350;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      select,
+      option {
+        border: none;
+        outline: none;
+        background-color: inherit;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+      }
+    }
+  }
+}

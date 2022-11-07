@@ -1,0 +1,13 @@
+.products {
+  color: #2b3350;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  & > div {
+    margin: 20px;
+  }
+}

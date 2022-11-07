@@ -38,7 +38,7 @@ const Header = () => {
           </div>
           <div class="cart">
             <img src='${cart}' alt="cart icon" />
-            <p>My orders</p>
+            <a href='/cart' data-link>My orders</a>
             <span class="quantity">+1</span>
           </div>
         </div>

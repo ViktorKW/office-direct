@@ -1,12 +1,28 @@
 footer {
   background: #191e32;
-  padding: 30px;
 
+  padding: 30px;
+  // padding: 16px;
+  // margin: auto;
+
+  .hideOnMobile {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  .hideOnDekstop {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
   .officeDirect {
-    order: -2;
     display: flex;
     align-items: flex-start;
+    margin-bottom: 15px;
+
     color: #e7eaef;
+
     img {
       margin-left: -1px;
     }
@@ -30,23 +46,31 @@ footer {
       }
     }
   }
-
-  ul {
+  .d-flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  // .freeToMove{
+  //     position: absolute;
+  //     top:40px;
+  // }
+  .d-flex {
+    display: flex;
+  }
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  .list {
+    justify-content: space-between;
     max-width: 1172px;
     width: 100%;
+    flex-direction: column;
     @media (min-width: 768px) {
       height: 126px;
+      flex-direction: row;
     }
-
-    // justify-content: space-between;
-
     margin: auto;
-    display: flex;
-    // flex: 0 1 auto;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    li {
+    p {
       margin-bottom: 10px;
 
       .m-large {
@@ -112,9 +136,9 @@ footer {
     }
 
     .privacyPolicy {
-      @media (min-width: 768px) {
-        order: -1;
-      }
+      // @media (min-width: 768px) {
+      //     order: -1;
+      // }
 
       font-family: "Inter";
       font-style: normal;
