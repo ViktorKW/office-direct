@@ -4,8 +4,8 @@ import samuraiLady from './images/samuraiLady.svg';
 
 const SamuraiLady = () => {
   return (
-    <div class='samurai-lady'>
-      <div class='info'>
+    <div className='samurai-lady'>
+      <div className='info'>
         <h1>
           Armchairs Samurai on favorable terms <u>throughout the country</u>
         </h1>
@@ -13,7 +13,7 @@ const SamuraiLady = () => {
           Here you do not have to blindly buy goods - test before buying. WE
           HAVE EVERYTHING!
         </p>
-        <button class='blue-btn'>Sign up for a test drive</button>
+        <button className='blue-btn'>Sign up for a test drive</button>
       </div>
       <img src={samuraiLady} alt='samurai lady' />
     </div>
