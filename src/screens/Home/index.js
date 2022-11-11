@@ -1,7 +1,10 @@
 import React from 'react';
 import Header from '../../components/Header';
+import Advantages from '../../components/Advantages';
+import Selectors from '../../components/Selectors';
+import Products from '../../components/Products';
 import './style.scss';
-// import Header from '../../components/Header';
+
 // import Catalog from '../../components/Catalog';
 // import Introduction from '../../components/Introduction';
 // import SamuraiLady from '../../components/SamuraiLady';
@@ -12,8 +15,15 @@ import './style.scss';
 
 const Home = () => {
   return (
-    <div class='home-page'>
+    <div className='home-page'>
       <Header />
+      <div className='catalog'>
+        <Advantages />
+        <h1>Chair's catalog</h1>
+        <Selectors />
+        <Products />
+        <button className='grey-btn'>Show more</button>
+      </div>
     </div>
   );
 };
