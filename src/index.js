@@ -1,9 +1,7 @@
-import { handleLocation, handleRoute } from "./helpers/router";
-import "./styles/index.scss";
-handleLocation();
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './styles/index.scss';
 
-document.addEventListener("click", (e) => {
-  if (e.target.dataset.link === "") {
-    handleRoute(e);
-  }
-});
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
