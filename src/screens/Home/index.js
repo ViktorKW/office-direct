@@ -5,7 +5,6 @@ import Selectors from '../../components/Selectors';
 import Products from '../../components/Products';
 import './style.scss';
 
-// import Catalog from '../../components/Catalog';
 // import Introduction from '../../components/Introduction';
 // import SamuraiLady from '../../components/SamuraiLady';
 // import Description from '../../components/Description';
