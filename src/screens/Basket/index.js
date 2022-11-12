@@ -4,13 +4,12 @@ import Footer from "../../components/footer";
 import BasketPreview from "../../components/basketPreview";
 
 const Basket = () => {
-  return `
+  return (
     <div class = "basketContainer">
-      ${Header()}
-      ${BasketPreview()}
-      ${Footer()}
+      {BasketPreview()}
+      {Footer()}
     </div>
-  `;
+  )
 };
 
 

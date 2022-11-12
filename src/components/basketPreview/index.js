@@ -114,24 +114,24 @@ const form2 = {
 
 console.log(itemsArray.reduce((acc,{initPrice})=>acc+initPrice,0))
 const BasketPreview = () => {
-  return `
+  return (
     <div class="basket">
-        <div class='basketRoute d-flex align-items-center'><p>Главная</p><img class='arrowRight' src=${arrowRight}><p>Cart</p></div>
+        <div class='basketRoute d-flex align-items-center'><p>Главная</p><img class='arrowRight' alt="arrow-right" src={arrowRight}/><p>Cart</p></div>
         <h3>Your order</h3>
-        ${itemsArray.map(e=> BasketItem(e)).join("")}
+        {itemsArray.map(e=> BasketItem(e))}
         <form>
-        ${BasketTotal(itemsArray.reduce((acc,{initPrice})=>acc+initPrice,0),itemsArray.reduce((acc,{currentPrice})=>acc+currentPrice,0))}
-        ${BasketFormGroup(form0)}
-        ${BasketFormGroup(form1)}
-        ${BasketFormGroup(form2)}
+        {BasketTotal(itemsArray.reduce((acc,{initPrice})=>acc+initPrice,0),itemsArray.reduce((acc,{currentPrice})=>acc+currentPrice,0))}
+        {BasketFormGroup(form0)}
+        {BasketFormGroup(form1)}
+        {BasketFormGroup(form2)}
         <div class='d-flex checkout'>
-            <button class='basketCheckout' type='submit'><div class='d-flex justify-content-center'><img class='cartImg' src='${cart}'>Checkout</div></button>
+            <button class='basketCheckout' type='submit'><div class='d-flex justify-content-center'><img class='cartImg' alt="cart" src={cart}/>Checkout</div></button>
             <p class='checkoutPolicy'>Нажимая «Оформить заказ», вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.
             </p>
         </div>
         </form>
     </div>
-  `;
+  )
 };
 
 export default BasketPreview;

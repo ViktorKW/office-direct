@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../../components/Header';
 import Advantages from '../../components/Advantages';
 import Selectors from '../../components/Selectors';
 import Products from '../../components/Products';
@@ -14,7 +13,6 @@ import './style.scss';
 const Home = () => {
   return (
     <div className='home-page'>
-      <Header />
       <Introduction />
       <div className='catalog'>
         <Advantages />
