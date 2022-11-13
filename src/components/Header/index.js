@@ -3,7 +3,7 @@ import './style.scss';
 import cellPhone from '../../assets/icons/cellPhone.svg';
 import send from '../../assets/icons/send.svg';
 import cart from '../../assets/icons/cart.svg';
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link } from 'react-router-dom';
 const Header = () => {
   return (
     <>
@@ -31,35 +31,42 @@ const Header = () => {
               </button>
             </div>
             <nav className='header__nav'>
-            <Link to="/cart" className="nav-link">About the products</Link>
-            <Link to="/cart" className="nav-link">Testimonials</Link>
-            <Link to="/cart" className="nav-link">Delivery & payment</Link>
-            <Link to="/cart" className="nav-link">Contacts</Link>
+              <Link to='/cart' className='nav-link'>
+                About the products
+              </Link>
+              <Link to='/cart' className='nav-link'>
+                Testimonials
+              </Link>
+              <Link to='/cart' className='nav-link'>
+                Delivery & payment
+              </Link>
+              <Link to='/cart' className='nav-link'>
+                Contacts
+              </Link>
             </nav>
           </div>
           <div className='header__menu-additional'>
             <div className='location'>
               <img src={send} alt='send icon' />
               <select name='city' id='city'>
-                <option value='kyiv' selected>
-                  Kyiv
-                </option>
+                <option value='kyiv'>Kyiv</option>
                 <option value='london'>London</option>
                 <option value='berlin'>Berlin</option>
               </select>
             </div>
             <div className='cart'>
               <img src={cart} alt='cart icon' />
-              <Link to="/cart" className="nav-link">My orders</Link>
+              <Link to='/cart' className='nav-link'>
+                My orders
+              </Link>
               <span className='quantity'>+1</span>
             </div>
           </div>
         </div>
       </header>
-      <Outlet/>
+      <Outlet />
     </>
   );
-  
 };
 
 export default Header;
