@@ -24,6 +24,8 @@ const Home = () => {
       <Description />
       <SamuraiLady />
       <Clients />
+
+      <canvas style={{ height: '200px' }}></canvas>
       <ContactUs />
       <Footer />
     </div>
