@@ -11,47 +11,50 @@ const Footer = () => {
 
   return (
     <footer>
-      <div class='d-flex list justify-content-between'>
-        <div class='d-flex-column'>
-          <div class='officeDirect'>
+      <div className='d-flex list justify-content-between'>
+        <div className='d-flex-column'>
+          <div className='officeDirect'>
             <img src={footerLogo} alt='company logo' />
             <div>
               <strong>OfficeDirect</strong>
               <a href='#'>Armchairs Samurai</a>
             </div>
           </div>
-          <p style={{ marginBottom: '6px' }} class='privacyPolicy hideOnMobile'>
+          <p
+            style={{ marginBottom: '6px' }}
+            className='privacyPolicy hideOnMobile'
+          >
             <a href='#'>Privacy policy</a>
           </p>
-          <p class='privacyPolicy hideOnMobile'>
+          <p className='privacyPolicy hideOnMobile'>
             <a href='#'>© 2021 All rights reserved</a>
           </p>
         </div>
-        <div class='d-flex-column'>
-          <p class='link'>
+        <div className='d-flex-column'>
+          <p className='link'>
             <a href='#'>About</a>
           </p>
-          <p class='link'>
+          <p className='link'>
             <a href='#'>Reviews</a>
           </p>
-          <p class='link'>
+          <p className='link'>
             <a href='#'>Delivery and payment</a>
           </p>
-          <p class='link mb-0 m-large'>
+          <p className='link mb-0 m-large'>
             <a href='#'>Contacts</a>
           </p>
         </div>
 
-        <div class='d-flex-column'>
-          <p class='info number'>
+        <div className='d-flex-column'>
+          <p className='info number'>
             <img src={cellPhone} alt='cell phone' />
             <a href='#'>+7 (812) 600-31-24</a>
           </p>
-          <p class='info'>
+          <p className='info'>
             <img src={mailBox} alt='email box' />
             <a href='#'>zakaz@kreslasamurai.com</a>
           </p>
-          <p class='info long'>
+          <p className='info long'>
             <img src={jps} alt='jps' />
             <a href='#'>
               Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678
@@ -59,11 +62,11 @@ const Footer = () => {
           </p>
           <p
             style={{ marginBottom: '6px' }}
-            class='privacyPolicy hideOnDekstop'
+            className='privacyPolicy hideOnDekstop'
           >
             <a href='#'>Privacy policy</a>
           </p>
-          <p class='privacyPolicy hideOnDekstop'>
+          <p className='privacyPolicy hideOnDekstop'>
             <a href='#'>© 2021 All rights reserved</a>
           </p>
         </div>

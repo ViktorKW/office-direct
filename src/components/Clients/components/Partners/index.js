@@ -9,17 +9,17 @@ import vs from './images/visual-studio-code-logo-svgrepo-com.svg';
 
 const Partners = () => {
   return (
-    <partners>
+    <div className='partners-container'>
       <header>Our partners</header>
-      <logos>
+      <ul className='logos-list'>
         <img src={discord} alt='discord' />
         <img src={kalilinux} alt='kalilinux' />
         <img src={mozilla} alt='mozilla' />
         <img src={riot} alt='riot' />
         <img src={ubuntu} alt='ubuntu' />
         <img src={vs} alt='vs code' />
-      </logos>
-    </partners>
+      </ul>
+    </div>
   );
 };
 

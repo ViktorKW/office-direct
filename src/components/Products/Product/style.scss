@@ -15,12 +15,12 @@
     margin-bottom: 10px;
   }
 
-  .info {
+  .product-info {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    font-family: "Inter";
+    font-family: 'Inter';
     font-style: normal;
     color: #2b3350;
     text-align: center;
@@ -28,7 +28,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
-    name {
+    .product-name {
       font-weight: 400;
       font-size: 20px;
       line-height: 130%;
@@ -36,7 +36,7 @@
       font-weight: lighter;
     }
 
-    price {
+    .product-price {
       font-weight: 900;
       font-size: 28px;
       line-height: 140%;
@@ -44,7 +44,7 @@
       letter-spacing: -0.05em;
     }
 
-    fullprice {
+    .product-full-price {
       font-weight: 700;
       font-size: 20px;
       line-height: 140%;

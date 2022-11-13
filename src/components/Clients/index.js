@@ -6,10 +6,10 @@ import './style.scss';
 
 const Clients = () => {
   return (
-    <clients>
+    <div className='clients-container'>
       <Partners />
       <Comments />
-    </clients>
+    </div>
   );
 };
 

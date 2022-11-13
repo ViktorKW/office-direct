@@ -7,7 +7,7 @@ const Products = () => {
   return (
     <div className='products'>
       {products_db.slice(0, 8).map((element) => (
-        <Product {...element} />
+        <Product key={element.id} {...element} />
       ))}
     </div>
   );

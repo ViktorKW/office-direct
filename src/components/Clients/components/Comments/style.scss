@@ -1,11 +1,10 @@
-comments {
+.comments-container {
   display: flex;
   flex-direction: column;
 
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   color: #2b3350;
-  margin-bottom: 200px;
 
   header {
     align-self: center;
@@ -14,12 +13,14 @@ comments {
     line-height: 120%;
   }
 
-  container {
+  .comments-list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    comment {
-      max-width: 550px;
+    justify-content: space-evenly;
+
+    .comment {
+      max-width: 25%;
 
       display: flex;
       flex-direction: column;
@@ -32,23 +33,24 @@ comments {
       padding: 20px;
       margin: 10px;
 
-      person {
+      .person {
         display: flex;
         flex-direction: row;
         align-items: left;
 
-        info {
+        .info {
           display: flex;
           flex-direction: column;
           align-items: left;
           margin: 10px;
-          name {
+
+          .name {
             font-weight: 600;
             font-size: 19px;
             line-height: 120%;
           }
 
-          stars {
+          .starts-container {
             display: flex;
             flex-direction: row;
             align-items: left;
@@ -56,7 +58,7 @@ comments {
         }
       }
 
-      text {
+      .comment-text {
         text-overflow: ellipsis;
         font-weight: 400;
         font-size: 16px;
@@ -64,7 +66,7 @@ comments {
         margin: 10px;
       }
 
-      finish {
+      .show-more {
         font-weight: 600;
         font-size: 16px;
         line-height: 120%;
