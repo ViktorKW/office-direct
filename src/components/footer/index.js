@@ -1,13 +1,13 @@
 import React from 'react';
 import './style.scss';
 import footerLogo from '../../assets/icons/footerLogo.svg';
-import logoSign from '../../assets/icons/logoSign.svg';
 import jps from '../../assets/icons/jps.svg';
 import cellPhone from '../../assets/icons/cellPhone.svg';
 import mailBox from '../../assets/icons/mailBox.svg';
 
+// import logoSign from '../../assets/icons/logoSign.svg';
 const Footer = () => {
-  const menu = ['home', 'about', 'contact us'];
+  // const menu = ['home', 'about', 'contact us'];
 
   return (
     <footer>
